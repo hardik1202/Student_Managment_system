@@ -1,0 +1,45 @@
+:root {
+  --text: #1f2a37;
+  --muted: #5b6673;
+  --bg: #f4f6f2;
+  --card: #ffffff;
+  --border: #e3e8ee;
+  --accent: #126b5b;
+  --accent-dark: #165447;
+  --danger: #b3372f;
+  --danger-dark: #8f2a24;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+html.dark {
+  --text: #e8edf2;
+  --muted: #9aa7b5;
+  --bg: #12161c;
+  --card: #1b222c;
+  --border: #2c3642;
+  --accent: #3cb89a;
+  --accent-dark: #2e947c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100svh;
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+a {
+  color: var(--accent);
+}
