@@ -1,8 +1,6 @@
 services:
   mongodb:
     image: mongo:7
-    ports:
-      - "27017:27017"
     volumes:
       - sms-data:/data/db
     networks:

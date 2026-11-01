@@ -1,4 +1,4 @@
-FROM node:18 AS build
+FROM node:22 AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
@@ -7,7 +7,7 @@ ARG VITE_API_URL=http://localhost:5000
 ENV VITE_API_URL=$VITE_API_URL
 RUN npm run build
 
-FROM node:18
+FROM node:22
 WORKDIR /app
 COPY --from=build /app /app
 EXPOSE 5173
